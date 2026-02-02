@@ -1,165 +1,157 @@
-# 📌 Projeto ETL com Python e Power BI
+📌 PROJETO: DESAFIO TÉCNICO – ETL COM PYTHON E POWER BI
 
-## Visão Geral
+Este projeto foi desenvolvido como parte de um desafio técnico para uma oportunidade na área de TI.
 
-Este projeto faz parte do meu portfólio e foi desenvolvido para **simular um cenário real de negócio**, muito comum em empresas que utilizam ERP (como o Protheus).
+O desafio propunha a simulação de um cenário real de negócio, comum em empresas que utilizam ERP, como o Protheus. A partir de um arquivo CSV de pedidos, foi implementado um processo simples de ETL (Extract, Transform, Load) utilizando Python, com geração de dados organizados para análise no Power BI e no Excel.
 
-A ideia foi partir de um **arquivo CSV de pedidos**, aplicar um processo simples de **ETL (Extract, Transform, Load)** com Python e, a partir dos dados tratados, gerar relatórios para análise no Power BI e no Excel.
+O foco do projeto está em demonstrar lógica, organização de dados e entendimento de fluxo de processos, competências esperadas para uma posição júnior.
 
-O foco não é apenas o código, mas mostrar **raciocínio lógico, organização de dados e visão de processo**, habilidades importantes para uma vaga júnior na área de TI.
+━━━━━━━━━━━━━━━━━━━━━━━
 
----
+🎯 OBJETIVO DO DESAFIO
 
-## 🎯 Objetivo do Projeto
+• Simular um fluxo de ETL aplicado a um problema real
+• Organizar pedidos com base na data de embarque
+• Criar métricas básicas para análise dos dados
+• Gerar arquivos prontos para análise em Excel e Power BI
+• Apresentar uma visão de como esse processo poderia ser automatizado no futuro (RPA)
 
-* Simular um fluxo de ETL aplicado a um problema real
-* Organizar pedidos com base na **data de embarque**
-* Criar métricas básicas para análise dos dados
-* Gerar arquivos prontos para análise em **Excel e Power BI**
-* Demonstrar como esse processo poderia ser **automatizado futuramente (RPA)**
+━━━━━━━━━━━━━━━━━━━━━━━
 
----
+🧠 O QUE FOI TRABALHADO
 
-## 🧠 O que foi trabalhado neste projeto
+• Leitura e tratamento de dados em Python
+• Organização e transformação de dados em arquivos CSV
+• Criação de métricas analíticas no Power BI (DAX)
+• Geração de relatório final em Excel
+• Visão conceitual de automação de processos
 
-* Leitura e tratamento de dados em Python
-* Organização e transformação de dados em CSV
-* Criação de métricas analíticas no Power BI (DAX)
-* Geração de relatório final em Excel
-* Visão conceitual de automação de processos
+━━━━━━━━━━━━━━━━━━━━━━━
 
----
+📂 ESTRUTURA DO PROJETO
 
-## 📂 Estrutura do Projeto
-
-```
 etl-python-milhao/
-│
-├── data/
-│   ├── pedidos.csv              # Arquivo de entrada (dados fictícios)
-│   └── fila-fretes.csv           # Arquivo gerado pelo script Python
-│
-├── reader-csv/
-│   ├── reader_csv.py             # Script principal de ETL
-│   └── logger.py                 # Configuração de logs
-│
-├── docs/
-│   ├── data_transformation-pedidos.pbit  # Power BI com transformações
-│   ├── relatorio.xlsx                     # Relatório final em Excel
-│   └── Automacao_Diagrama.pdf             # Diagrama conceitual de automação
-│
-└── README.md
-```
 
----
+data
 
-## ⚙️ Pré-requisitos
+pedidos.csv → Arquivo de entrada (dados fictícios)
 
-* Python 3.9 ou superior
-* pip
+fila-fretes.csv → Arquivo gerado pelo script Python
 
-Instalação das dependências:
+reader-csv
 
-```bash
-pip install pandas openpyxl
-```
+reader_csv.py → Script principal de ETL
 
----
+logger.py → Configuração de logs
 
-## ▶️ Como Executar o Projeto
+docs
+
+data_transformation-pedidos.pbit → Power BI com transformações
+
+relatorio.xlsx → Relatório final em Excel
+
+Automacao_Diagrama.pdf → Diagrama conceitual de automação
+
+README.md
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+⚙️ PRÉ-REQUISITOS
+
+• Python 3.9 ou superior
+• pip
+
+Dependências utilizadas:
+
+pandas
+
+openpyxl
+
+━━━━━━━━━━━━━━━━━━━━━━━
+
+▶️ COMO EXECUTAR
 
 Na raiz do projeto, execute:
 
-```bash
 python reader-csv/reader_csv.py
-```
 
 O script irá:
+• Ler o arquivo data/pedidos.csv
+• Processar e organizar os dados
+• Gerar o arquivo data/fila-fretes.csv
 
-* Ler o arquivo `data/pedidos.csv`
-* Processar e organizar os dados
-* Gerar o arquivo `data/fila-fretes.csv`
+Esse arquivo pode ser utilizado posteriormente para análise no Power BI.
 
-Esse arquivo é utilizado posteriormente para análise no Power BI.
+━━━━━━━━━━━━━━━━━━━━━━━
 
----
+📊 TRANSFORMAÇÕES ANALÍTICAS (POWER BI)
 
-## 📊 Transformações Analíticas (Power BI)
+Após a execução do script Python, o CSV gerado foi importado no Power BI para criação das métricas analíticas.
 
-Após a execução do script Python, o CSV gerado foi importado no Power BI para criação das métricas.
+Métricas criadas:
+• Total de itens por pedido
+• Valor total por pedido
 
-### Métricas criadas (DAX)
+Arquivos gerados:
+• Relatório Excel → docs/relatorio.xlsx
+• Arquivo Power BI → docs/data_transformation-pedidos.pbit
 
-* Total de itens por pedido
-* Valor total por pedido
+━━━━━━━━━━━━━━━━━━━━━━━
 
-### Arquivos gerados
+🤖 VISÃO CONCEITUAL DE AUTOMAÇÃO (RPA)
 
-* Relatório final em Excel → `docs/relatorio.xlsx`
-* Arquivo do Power BI → `docs/data_transformation-pedidos.pbit`
+Embora não tenha sido utilizada uma ferramenta de RPA na prática, foi criada uma visão conceitual para demonstrar como esse processo poderia ser automatizado em um ambiente real.
 
----
+Fluxo simulado:
 
-## 🤖 Visão Conceitual de Automação (RPA)
+N8N
+• Entrada do arquivo CSV
+• Execução do script Python
+• Envio dos dados tratados para análise
 
-Embora não tenha sido utilizada uma ferramenta de RPA na prática, foi criado um **diagrama conceitual** para demonstrar como esse processo poderia ser automatizado em um ambiente real.
+Power Automate
+• Aguardar atualização do Power BI
+• Gerar e distribuir relatórios
+• Enviar notificações por e-mail
 
-### Fluxo pensado (simulado)
+📄 Diagrama disponível em:
+docs/Automacao_Diagrama.pdf
 
-**N8N**
+━━━━━━━━━━━━━━━━━━━━━━━
 
-* Entrada do arquivo CSV
-* Execução do script Python
-* Envio dos dados tratados para análise
+ℹ️ OBSERVAÇÃO IMPORTANTE
 
-**Power Automate**
-
-* Aguardar atualização do Power BI
-* Gerar e distribuir relatórios
-* Enviar notificações por e-mail
-
-📄 Diagrama disponível em: `docs/Automacao_Diagrama.pdf`
-
----
-
-## ℹ️ Observação Importante
-
-O script Python funciona de forma **independente**.
+O script Python funciona de forma independente.
 
 Mesmo sem ferramentas de automação, ele:
+• Lê o CSV
+• Realiza as transformações necessárias
+• Gera o arquivo final para análise
 
-* Lê o CSV
-* Realiza as transformações necessárias
-* Gera o arquivo final para análise
+A automação foi pensada apenas como uma possível evolução do processo.
 
-A automação foi pensada apenas como **visão de evolução do processo**.
+━━━━━━━━━━━━━━━━━━━━━━━
 
----
+📜 LOGS DE EXECUÇÃO
 
-## 📜 Logs de Execução
-
-Durante a execução, o script registra as principais etapas:
-
-```
 [INFO] START
 [INFO] LOAD
 [INFO] TRANSFORM
 [INFO] EXPORT
 [INFO] END
-```
 
----
+━━━━━━━━━━━━━━━━━━━━━━━
 
-## ✅ Resultado Esperado
+✅ RESULTADO FINAL
 
-* Dados de pedidos organizados por data de embarque
-* Colunas agregadas:
+• Dados de pedidos organizados por data de embarque
+• Colunas agregadas:
 
-  * Total_Itens_Pedido
-  * Valor_Total_Pedido
+Total_Itens_Pedido
 
-### Arquivos finais
+Valor_Total_Pedido
 
-* Relatório Excel → `docs/relatorio.xlsx`
-* Arquivo Power BI → `docs/data_transformation-pedidos.pbit`
-* Diagrama conceitual → `docs/Automacao_Diagrama.pdf`
+Arquivos finais:
+• Relatório Excel → docs/relatorio.xlsx
+• Arquivo Power BI → docs/data_transformation-pedidos.pbit
+• Diagrama conceitual → docs/Automacao_Diagrama.pdf
