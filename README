@@ -30,27 +30,20 @@ O foco do projeto está em demonstrar lógica, organização de dados e entendim
 
 📂 ESTRUTURA DO PROJETO
 
-etl-python-milhao/
+reader-csv-python/
 
-data
+data/
+  pedidos.csv → Arquivo de entrada (dados fictícios)
+  fila-fretes.csv → Arquivo gerado pelo script Python
 
-pedidos.csv → Arquivo de entrada (dados fictícios)
+reader-csv/
+    reader_csv.py → Script principal de ETL
+    logger.py → Configuração de logs
 
-fila-fretes.csv → Arquivo gerado pelo script Python
-
-reader-csv
-
-reader_csv.py → Script principal de ETL
-
-logger.py → Configuração de logs
-
-docs
-
-data_transformation-pedidos.pbit → Power BI com transformações
-
-relatorio.xlsx → Relatório final em Excel
-
-Automacao_Diagrama.pdf → Diagrama conceitual de automação
+docs/
+  data_transformation-pedidos.pbit → Power BI com transformações
+  relatorio.xlsx → Relatório final em Excel
+  Automacao_Diagrama.pdf → Diagrama conceitual de automação
 
 README.md
 
@@ -62,9 +55,7 @@ README.md
 • pip
 
 Dependências utilizadas:
-
 pandas
-
 openpyxl
 
 ━━━━━━━━━━━━━━━━━━━━━━━
