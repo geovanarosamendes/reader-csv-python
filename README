@@ -1,14 +1,11 @@
-📌 PROJETO: DESAFIO TÉCNICO – ETL COM PYTHON E POWER BI
+📌 ETL COM PYTHON E POWER BI
 
-Este projeto foi desenvolvido como parte de um desafio técnico para uma oportunidade na área de TI.
-
-O desafio propunha a simulação de um cenário real de negócio, comum em empresas que utilizam ERP, como o Protheus. A partir de um arquivo CSV de pedidos, foi implementado um processo simples de ETL (Extract, Transform, Load) utilizando Python, com geração de dados organizados para análise no Power BI e no Excel.
-
-O foco do projeto está em demonstrar lógica, organização de dados e entendimento de fluxo de processos, competências esperadas para uma posição júnior.
+Simulação de um cenário real de negócio, comum em empresas que utilizam ERP, como o Protheus. 
+A partir de um arquivo CSV de pedidos, foi implementado um processo simples de ETL (Extract, Transform, Load) utilizando Python, com geração de dados organizados para análise no Power BI e no Excel.
 
 ━━━━━━━━━━━━━━━━━━━━━━━
 
-🎯 OBJETIVO DO DESAFIO
+🎯 OBJETIVO
 
 • Simular um fluxo de ETL aplicado a um problema real
 • Organizar pedidos com base na data de embarque
